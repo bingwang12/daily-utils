@@ -1,0 +1,67 @@
+.pie {
+    border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: linear-gradient(0deg, #1d4c7f 50%, transparent 50%), linear-gradient(to right, #1d4c7f 50%, #43bafe 50%);
+	/*
+		度数从 -90deg开始   -90deg需要  变成全部0 也就是background:#1d4c7f;
+		扇形图的  25%就是90deg的变化  -90deg相当于0  0deg相当于25%  90deg相当于  50%
+		超过 90deg到 270deg之间需要翻转 以上面的代码为例子  几种百分比的扇形图的css
+	*/
+}
+
+/*0%*/
+.pie {
+    border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: #43bafe;
+}
+
+/*12.5%*/
+.pie {
+    border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: linear-gradient(-45deg, #1d4c7f 50%, transparent 50%), linear-gradient(to right, #1d4c7f 50%, #43bafe 50%);
+}
+
+/*25%*/
+.pie {
+    border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: linear-gradient(0deg, #1d4c7f 50%, transparent 50%), linear-gradient(to right, #1d4c7f 50%, #43bafe 50%);
+}
+
+/*50%*/
+.pie{
+	border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: linear-gradient(90deg, #1d4c7f 50%, transparent 50%), linear-gradient(to right, #1d4c7f 50%, #43bafe 50%);
+}
+
+/*75%*/
+.pie{
+	border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: linear-gradient(180deg, #43bafe 50%, transparent 50%), linear-gradient(to right, #43bafe 50%, #1d4c7f 50%);
+	transform: rotateX(180deg) rotateY(180deg);
+}
+
+/*100%*/
+.pie {
+    border-radius: 50%;       /* 扇形图圆形  */
+    width: 17px;			  /* 扇形图直径 */
+    height: 17px;
+    overflow: hidden;         /* 扇形图超出隐藏 */
+    background: #1d4c7f;
+}
