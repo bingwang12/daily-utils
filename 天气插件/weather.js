@@ -1,7 +1,7 @@
 //获取天气
 function getWeather() {
 	$.ajax({
-		url: "https://wthrcdn.etouch.cn/WeatherApi?city=成都",
+		url: "http://wthrcdn.etouch.cn/WeatherApi?city=成都",
 		type: "get",
 		success: function(res) {
 			var x2js = new X2JS();
@@ -17,6 +17,9 @@ function getWeather() {
 			$(".weatherSpan").html(getWeatherPic(type));
 			$(".weatherWind").html(fengxiang);
 			$(".weatherWendu").html(wendu)
+			
+			
+		
 		}
 	});
 }
